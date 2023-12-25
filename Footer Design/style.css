@@ -1,0 +1,132 @@
+   
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+      
+    }
+
+    body{
+        background: rgb(202, 226, 224);
+    }
+    
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: #101214;
+     
+    }
+    
+    .footer .footer-row {
+      /* display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; */
+      display: grid;
+      grid-template-columns: repeat(6,1fr);
+      gap: 20px;
+      padding: 40px;
+      
+    }
+    
+    .footer-row .footer-col h4 {
+      color: #b3aeae;
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+    
+    .footer-col .links li {
+      list-style: none;
+      
+    }
+    
+    .footer-col .links li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 550;
+      line-height: 18px;
+      
+    }
+
+     p{
+        font-size: 12px;
+        width: 180px;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 18px;
+        
+    }
+  
+    
+    .footer-col .links li a:hover {
+      text-decoration: underline;
+    }
+    
+    .line{
+        border-left: 1px solid grey;
+        padding-left: 30px;
+    }
+
+    hr{
+               
+        margin-bottom: 20px;
+        border: 1px solid #454d5e
+        
+       
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 12px;
+        color: #c5c3c3;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+   
+    
+    @media (max-width: 792px) {
+      .footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        
+      }
+    
+      .footer .footer-row {
+        padding: 20px;
+        grid-template-columns: repeat(3,1fr);
+       
+      }
+
+
+    
+   
+    }
+    @media (max-width: 560px) {
+      .footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        
+      }
+    
+      .footer .footer-row {
+        padding: 20px;
+        grid-template-columns: auto;
+       
+      }
+
+  
+      .line{
+        border: 0;
+        padding: 0;
+      }
+    
+   
+    }
